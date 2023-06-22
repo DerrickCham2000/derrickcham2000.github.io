@@ -57,7 +57,9 @@ const Projects = () => {
 						</div>
 
 						<div className="projects-list">
-							<GridDisplay />
+							<GridDisplay
+								array={INFO.projects}
+							/>
 						</div>
 					</div>
 					<div className="page-footer">

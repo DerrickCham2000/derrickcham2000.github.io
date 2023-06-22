@@ -6,10 +6,10 @@ import INFO from "../../data/user";
 
 import "./styles/gridDisplay.css";
 
-const GridDisplay = () => {
+const GridDisplay = ({array}) => {
 	return (
 		<div className="all-projects-container">
-			{INFO.projects.map((project, index) => (
+			{array.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
 						logo={project.logo}

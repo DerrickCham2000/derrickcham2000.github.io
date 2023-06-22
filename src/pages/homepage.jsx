@@ -6,9 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faGithub,
-  faStackOverflow,
+  faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -26,29 +27,36 @@ import "./styles/homepage.css";
 const Homepage = () => {
   const currentSEO = SEO.find((item) => item.page === "home");
   const [zingerCount, setZingerCount] = useState(0);
-  const [isSliding, setIsSliding] = useState(false);
 
-  /*useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
-      setIsSliding(true);
+      setZingerCount((prevCount) => {
+        if (prevCount > INFO.homepage.zingers.length - 2) {
+          return 0;
+        } else {
+          return prevCount + 1;
+        }
+      });
+    }, 4000);
 
-      const animationTimeout = setTimeout(() => {
-        setZingerCount((prevCount) => {
-			if (prevCount < INFO.homepage.zingers.length) {
-				return prevCount + 1;
-			} else {
-				return 0
-			}
-		});
-        setIsSliding(false);
-      }, 500);
+    // Clean up the interval when the component is unmounted
+    return () => clearInterval(interval);
+  }, []);
 
-      return () => clearTimeout(animationTimeout);
+/*   useEffect(() => {
+    const interval = setInterval(() => {
+      setZingerCount((prevCount) => {
+        if (prevCount < INFO.homepage.zingers.length) {
+          return prevCount + 1;
+        } else {
+          return 0
+        }
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);*/
-
+  }, []);
+});
+ */
   return (
     <div className="page-content">
       <Helmet>
@@ -68,11 +76,16 @@ const Homepage = () => {
           <div className="homepage-first-area">
             <div className="homepage-first-area-left-side">
               <div className="title homepage-title">{INFO.homepage.title}</div>
-{/*               <div
-                className={isSliding ? "slide-up title homepage-title" : "title homepage-title"}
+              <ReactCSSTransitionReplace
+                className="title homepage-title"
+                transitionName="fade-wait"
+                transitionEnterTimeout={1000}
+                transitionLeaveTimeout={400}
               >
-                {INFO.homepage.zingers[zingerCount]}
-              </div> */}
+                <div key={zingerCount}>
+                  {INFO.homepage.zingers[zingerCount]}
+                </div>
+              </ReactCSSTransitionReplace>
 
               <div className="subtitle homepage-subtitle">
                 {INFO.homepage.description}
@@ -92,33 +105,15 @@ const Homepage = () => {
           </div>
 
           <div className="homepage-socials">
-            <a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="homepage-social-icon"
-              />
-            </a>
             <a href={INFO.socials.github} target="_blank" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faGithub}
                 className="homepage-social-icon"
               />
             </a>
-            <a href={INFO.socials.stackoverflow} target="_blank" rel="noreferrer">
+            <a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
               <FontAwesomeIcon
-                icon={faStackOverflow}
-                className="homepage-social-icon"
-              />
-            </a>
-            <a href={INFO.socials.instagram} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="homepage-social-icon"
-              />
-            </a>
-            <a href={`mailto:${INFO.main.email}`} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faMailBulk}
+                icon={faLinkedin}
                 className="homepage-social-icon"
               />
             </a>
@@ -126,7 +121,9 @@ const Homepage = () => {
 
           <div className="homepage-projects">
 			<div className="title">Skills and Proficiencies</div>
-            <GridDisplay />
+            <GridDisplay
+              array={INFO.skills}
+            />
           </div>
 
           <div className="homepage-works homepage-after-title">
