@@ -7,8 +7,8 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import Logo from "../components/common/logo";
@@ -43,20 +43,6 @@ const Homepage = () => {
     return () => clearInterval(interval);
   }, []);
 
-/*   useEffect(() => {
-    const interval = setInterval(() => {
-      setZingerCount((prevCount) => {
-        if (prevCount < INFO.homepage.zingers.length) {
-          return prevCount + 1;
-        } else {
-          return 0
-        }
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-});
- */
   return (
     <div className="page-content">
       <Helmet>
@@ -117,6 +103,21 @@ const Homepage = () => {
                 className="homepage-social-icon"
               />
             </a>
+            <a
+						href={`mailto:${INFO.main.email}`}
+						target="_blank"
+						rel="noreferrer"
+            className="email-wrapper"
+					>
+						<div>
+							<FontAwesomeIcon
+                icon={faEnvelope}
+                className="homepage-social-icon"
+                />
+						</div>
+
+						<div className="homepage-email">{INFO.main.email}</div>
+					</a>
           </div>
 
           <div className="homepage-projects">

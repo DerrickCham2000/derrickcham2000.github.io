@@ -8,8 +8,7 @@
 	align-items: center;
 }
 
-.footer-links,
-.footer-credits {
+.footer-links{
 	flex-basis: 50%;
 }
 
@@ -36,13 +35,6 @@
 
 .footer-nav-link-list a:hover {
 	color: var(--link-color);
-}
-
-.footer-credits-text {
-	justify-content: flex-end;
-	color: var(--tertiary-color);
-	font-size: 14px;
-	text-align: right;
 }
 
 @media (max-width: 600px) {

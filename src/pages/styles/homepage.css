@@ -11,6 +11,18 @@
 	padding-top: 25px;
 }
 
+.email-wrapper {
+	display: inline-block
+}
+
+.homepage-email {
+	color: var(--secondary-color);
+	padding-top: 2px;
+	margin-left: -10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
 .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
