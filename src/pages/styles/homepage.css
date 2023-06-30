@@ -12,7 +12,7 @@
 }
 
 .email-wrapper {
-	display: inline-block
+	display: flex;
 }
 
 .homepage-email {
