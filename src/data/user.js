@@ -52,7 +52,7 @@ const INFO = {
 			logo: icons.javascript,
 			subtitle: "Made with HTML, JavaScript and CSS and leverages Firebase's real-time database system.",
 			linkText: "View Project",
-			photo: '../pixelverse.png',
+			photo: '/pixelverse.PNG',
 			link: "https://pixelverse-adventures.web.app/",
 		},
 
@@ -63,7 +63,7 @@ const INFO = {
 			logo: icons.react,
 			subtitle: "Made with React, JavaScript and CSS. Also uses Firebase services to store data and provide authentication.",
 			linkText: "View Project",
-			photo: '../taskmaster.png',
+			photo: '/taskmaster.png',
 			link: "https://derrick-cham-to-do-list.web.app/",
 		},
 
@@ -74,7 +74,7 @@ const INFO = {
 			logo: icons.javascript,
 			subtitle: "Made with React, JavaScript and CSS. Made to practice state management in React",
 			linkText: "View Project",
-			photo: "../clicker.png",
+			photo: "/clicker.png",
 			link: "https://derrickcham2000.github.io/Realm-Clickers-Idle-Adventure/",
 		},
 
@@ -85,7 +85,7 @@ const INFO = {
 			logo: icons.react,
 			subtitle: "Made with React, JavaScript and CSS. Axios was used to practice API usage.",
 			linkText: "View Project",
-			photo: "../yugioh.png",
+			photo: "/yugioh.png",
 			link: "https://derrickcham2000.github.io/yugioh-what-card/",
 		},
 
@@ -96,7 +96,7 @@ const INFO = {
 			subtitle: "Made with React, JavaScript and CSS. Special care was taken towards styling to provide a visually pleasant experience.",
 			logo: icons.react,
 			linkText: "View Project",
-			photo: "../portfolio.png",
+			photo: "/portfolio.png",
 			link: "https://derrickcham2000.github.io/",
 		},
 
@@ -107,7 +107,7 @@ const INFO = {
 			subtitle: "Made with C# using the Unity game engine.",
 			logo: icons.c,
 			linkText: "View Project",
-			photo: "../roguelights.png",
+			photo: "/roguelights.png",
 			link: "https://drive.google.com/file/d/187afR_ElcB1bvzZpr_99KRbPczuDxeJq/view?usp=sharing",
 		},
 
@@ -118,7 +118,7 @@ const INFO = {
 			subtitle: "Made with HTML, JavaScript, CSS and Node. Uses socket.io for real-time communication between clients.",
 			logo: icons.html,
 			linkText: "View Project Code",
-			photo: "../housemusic.png",
+			photo: "/housemusic.png",
 			link: "https://github.com/DerrickCham2000/Housemusic",
 		},
 	],
