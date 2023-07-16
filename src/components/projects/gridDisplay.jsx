@@ -2,8 +2,6 @@ import React from "react";
 
 import Project from "./project";
 
-import INFO from "../../data/user";
-
 import "./styles/gridDisplay.css";
 
 const GridDisplay = ({array}) => {
@@ -17,6 +15,8 @@ const GridDisplay = ({array}) => {
 						description={project.description}
 						linkText={project.linkText}
 						link={project.link}
+						subtitle={project.subtitle}
+						photo={project.photo}
 					/>
 				</div>
 			))}

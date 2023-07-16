@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -54,6 +55,11 @@ const Projects = () => {
 							mind. Collaborating with others is a great way to
 							learn and grow, and I'm always open to new ideas and
 							feedback.
+						</div>
+
+						<div>
+							<br/>
+							<Link to={INFO.socials.github}>Check out my code here!</Link>
 						</div>
 
 						<div className="projects-list">
