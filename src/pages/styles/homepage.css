@@ -128,7 +128,7 @@
 
 @media (max-width: 1024px) {
 	.homepage-first-area {
-		flex-direction: column;
+		display: block;
 	}
 
 	.homepage-first-area-left-side {

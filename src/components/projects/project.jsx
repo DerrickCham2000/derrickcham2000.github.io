@@ -31,7 +31,7 @@ const Project = (props) => {
 		<React.Fragment>
 			<div className="project">
 				{link ?
-				<Link to={link}>
+				<Link to={link} target="_blank">
 					{<ProjectContent/>}
 				</Link>
 				:

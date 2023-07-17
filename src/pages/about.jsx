@@ -17,6 +17,7 @@ const About = () => {
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "about");
+	const width = window.innerWidth;
 
 	return (
 		<React.Fragment>
@@ -45,13 +46,7 @@ const About = () => {
 									{INFO.about.title}
 								</div>
 
-								<div className="subtitle about-subtitle">
-									{INFO.about.description}
-								</div>
-							</div>
-
-							<div className="about-left-side">
-								<div className="about-image-container">
+								{(width < 1024) && <div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
 											src="about.jpg"
@@ -59,7 +54,23 @@ const About = () => {
 											className="about-image"
 										/>
 									</div>
+								</div>}
+
+								<div className="subtitle about-subtitle">
+									{INFO.about.description}
 								</div>
+							</div>
+
+							<div className="about-left-side">
+								{(width > 1024) && <div className="about-image-container">
+									<div className="about-image-wrapper">
+										<img
+											src="about.jpg"
+											alt="about"
+											className="about-image"
+										/>
+									</div>
+								</div>}
 
 								<div className="about-socials">
 									<Socials />
