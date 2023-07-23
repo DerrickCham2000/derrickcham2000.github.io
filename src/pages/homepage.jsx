@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -117,6 +118,10 @@ const Homepage = () => {
 
           <div className="homepage-projects">
 			    <div className="title">My Projects</div>
+            <div>
+							<br/>
+							<Link target="_blank" to={INFO.socials.github}>Check out my code here!</Link>
+						</div>
             <GridDisplay
               array={INFO.projects}
             />

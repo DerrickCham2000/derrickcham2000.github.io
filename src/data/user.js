@@ -95,9 +95,8 @@ const INFO = {
 				"A personal website made to showcase my skills and talents!",
 			subtitle: "Made with React, JavaScript and CSS. Special care was taken towards styling to provide a visually pleasant experience.",
 			logo: icons.react,
-			linkText: "View Project",
+			linkText: "",
 			photo: "/portfolio.PNG",
-			link: "https://derrickcham2000.github.io/",
 		},
 
 		{
