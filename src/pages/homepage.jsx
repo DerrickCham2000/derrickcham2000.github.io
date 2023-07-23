@@ -12,7 +12,6 @@ import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
 import GridDisplay from "../components/projects/gridDisplay";
 
 import INFO from "../data/user";

@@ -28,7 +28,7 @@ const INFO = {
 	homepage: {
 		title: "Full-stack developer, Computer Science Graduate and...",
 		description:
-			"I am a highly motivated and detail-oriented Computer Science graduate seeking a challenging entry-level position in software development. Leveraging my foundation in programming, algorithms, and data structures, I aim to contribute to the development of software while improving my technical skills in a collaborative team environment.",
+			"I am a highly motivated and detail-oriented Computer Science graduate seeking a challenging entry-level position in software development. \n\nLeveraging my foundation in programming, algorithms, and data structures, I aim to contribute to the development of software while improving my technical skills in a collaborative team environment.",
 		zingers: ["Full-Time Foodie", "Fighting Game Lover", "World Traveller", "Solo Game Developer", "AI Enthusiast"]
 	},
 

@@ -5,6 +5,8 @@
 	padding-top: 25px;
 	margin-top: 50px;
 	padding-bottom: 25px;
+	justify-content: end;
+	color: gray;
 	align-items: center;
 }
 

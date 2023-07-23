@@ -7,6 +7,7 @@ const Footer = () => {
 	return (
 		<React.Fragment>
 			<div className="footer">
+				© 2023 Derrick Cham. All rights reserved.
 {/* 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
 						<li className="footer-nav-link-item">
