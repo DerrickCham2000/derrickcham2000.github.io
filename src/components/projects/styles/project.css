@@ -76,9 +76,3 @@
 	margin-top: 10px;
 	border-radius: 5%;
 }
-
-@media (max-width: 600px) {
-	.project {
-		height: 300px;
-	}
-}
