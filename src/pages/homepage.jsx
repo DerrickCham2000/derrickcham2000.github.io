@@ -117,15 +117,11 @@ const Homepage = () => {
           </div>
 
           <div className="homepage-projects">
-			<div className="title">Skills and Proficiencies</div>
+			    <div className="title">My Projects</div>
             <GridDisplay
-              array={INFO.skills}
+              array={INFO.projects}
             />
           </div>
-
-          <div className="homepage-works homepage-after-title">
-              <Works />
-            </div>
 
           <div className="page-footer">
             <Footer />
