@@ -46,6 +46,27 @@ const INFO = {
 
 	projects: [
 		{
+			
+			title: "Regex AI",
+			description:
+				"An AI powered Regex generator so you never need to use Regex again!",
+			logo: icons.react,
+			subtitle: "Made with React, JavaScript, Express, CSS and OpenAI's API",
+			linkText: "View Project Code",
+			photo: '/regex.PNG',
+			link: "https://github.com/DerrickCham2000/RegexAi",
+		},
+		{
+			title: "Flappy Birdio (Multiplayer)",
+			description:
+				"An real-time multiplayer Flappy Bird game, featuring a live scoreboard. Playable in your browser!",
+			logo: icons.javascript,
+			subtitle: "Made with HTML, JavaScript, CSS and Firebase",
+			linkText: "View Project",
+			photo: '/flappybird.PNG',
+			link: "https://flappy-birdio-multiplayer.web.app/",
+		},
+		{
 			title: "PixelVerse Adventures",
 			description:
 				"A real-time online multiplayer game where players can log-in to race to collect coins.",
